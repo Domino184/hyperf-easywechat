@@ -41,8 +41,8 @@ namespace App\Controller;
 use EasyWeChat\Kernel\Exceptions\BadRequestException;
 use EasyWeChat\Kernel\Exceptions\InvalidArgumentException;
 use EasyWeChat\Kernel\Exceptions\InvalidConfigException;
-use Naixiaoxin\HyperfWechat\EasyWechat;
-use Naixiaoxin\HyperfWechat\Helper;
+use Domino\HyperfEasyWechat\EasyWechat;
+use Domino\HyperfEasyWechat\Helper;
 use ReflectionException;
 
 class WeChatController extends AbstractController
