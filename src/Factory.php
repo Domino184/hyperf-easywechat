@@ -22,12 +22,13 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Class Factory.
  *
- * @method \EasyWeChat\OfficialAccount\Application  officialAccount(string $name = "default", array $config = [])
- * @method \EasyWeChat\Work\Application  work(string $name = "default", array $config = [])
- * @method \EasyWeChat\MiniProgram\Application  miniProgram(string $name = "default", array $config = [])
- * @method \EasyWeChat\Payment\Application  payment(string $name = "default", array $config = [])
- * @method \EasyWeChat\OpenWork\Application  openWork(string $name = "default", array $config = [])
- * @method \EasyWeChat\MicroMerchant\Application  microMerchant(string $name = "default", array $config = [])
+ * @method \EasyWeChat\OfficialAccount\Application officialAccount(string $name = "default", array $config = [])
+ * @method \EasyWeChat\Work\Application work(string $name = "default", array $config = [])
+ * @method \EasyWeChat\MiniProgram\Application miniProgram(string $name = "default", array $config = [])
+ * @method \EasyWeChat\Payment\Application payment(string $name = "default", array $config = [])
+ * @method \EasyWeChat\OpenPlatform\Application openPlatform(string $name = "default", array $config = [])
+ * @method \EasyWeChat\OpenWork\Application openWork(string $name = "default", array $config = [])
+ * @method \EasyWeChat\MicroMerchant\Application microMerchant(string $name = "default", array $config = [])
  */
 class Factory
 {
@@ -37,6 +38,7 @@ class Factory
             'work' => 'work',
             'miniProgram' => 'mini_program',
             'payment' => 'payment',
+            'openPlatform' => 'open_platform',
             'openWork' => 'open_work',
             'microMerchant' => 'micro_merchant',
         ];

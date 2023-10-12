@@ -1,18 +1,18 @@
 # hyperf-wechat
 
-微信 SDK for Hyperf， 基于 overtrue/wechat
+微信 SDK for Hyperf， 基于 `w7corp/easywechat` `naixiaoxin/hyperf-wechat`
 
 
 ## 安装
 ~~~shell script
-composer require naixiaoxin/hyperf-wechat
+composer require domino/hyperf-easywechat
 ~~~
 
 
 ## 配置
 1. 发布配置文件
 ~~~shell script
-php ./bin/hyperf.php vendor:publish naixiaoxin/hyperf-wechat
+php ./bin/hyperf.php vendor:publish domino/hyperf-easywechat
 ~~~
 2. 修改应用根目录下的 `config/autoload/wechat.php` 中对应的参数即可。
 3. 每个模块基本都支持多账号，默认为 `default`。
@@ -76,7 +76,7 @@ class WeChatController extends AbstractController
 ##### 使用外观
 
 ```php
-  use \Naixiaoxin\HyperfWechat\EasyWechat;
+  use \Domino\HyperfEasyWechat\EasyWechat;
   $officialAccount = EasyWechat::officialAccount(); // 公众号
   $work = EasyWechat::work(); // 企业微信
   $payment = EasyWechat::payment(); // 微信支付
