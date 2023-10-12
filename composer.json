@@ -1,0 +1,46 @@
+{
+    "name": "domino/hyperf-easywechat",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "wechat"
+    ],
+    "description": "Wechat SDK For Hyperf",
+    "autoload": {
+        "psr-4": {
+            "Domino\\HyperfEasyWechat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-swoole": ">=4.8",
+        "hyperf/guzzle": "~3.0.0",
+        "w7corp/easywechat": "^5.30"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^1.0",
+        "hyperf/testing": "~3.0.0",
+        "swoole/ide-helper": "^5.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "co-phpunit -c phpunit.xml --colors=always",
+        "analyze": "phpstan analyse --memory-limit 300M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Domino\\HyperfEasyWechat\\ConfigProvider"
+        }
+    }
+}
