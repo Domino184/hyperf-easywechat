@@ -75,9 +75,9 @@ class Factory
         $configName = $this->configMap[$functionName];
         $config = $this->getConfig(sprintf('wechat.%s.%s', $configName, $accountName), $accountConfig);
         $app = \EasyWeChat\Factory::$functionName($config);
-        $app->rebind('cache', $this->cache);
+        // $app->rebind('cache', $this->cache);
         $app['guzzle_handler'] = CoroutineHandler::class;
-        $app->rebind('request', $this->getRequest());
+        // $app->rebind('request', $this->getRequest());
         return $app;
     }
 
